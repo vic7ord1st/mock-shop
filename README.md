@@ -11,6 +11,7 @@ You can fork this git repository and get to work!
 **NOTE** The APIs are best consumed with postman. A detailed representation schema, requests and responses for the APIs can be seen in the swagger documentation
 
 **Login Credentials**
+
 Admin: 
   username: okoroafor.v@example.com password: admin1234
 
