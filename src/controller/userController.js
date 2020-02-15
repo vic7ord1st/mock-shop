@@ -8,7 +8,7 @@ class Users {
         const isAdmin = false;
         return User.create({ firstName, lastName, email, password, isAdmin })
             .then(async (userData) => {
-                const auth = await userData.generateAuthToken(userData.email)
+                const auth = await userData.generateAuthToken(userData.email, userData.isAdmin)
                 console.log(auth);
                 res.status(201).send({
                     status: 'success',
@@ -39,8 +39,11 @@ class Users {
                         message: 'Password doesnt match'
                     })
                 } else {
+                    const auth = await user.generateAuthToken(user.email, user.isAdmin)
+                    console.log(auth);
                     res.status(200).send({
                         status: 'success',
+                        auth: auth,
                         data: user
                     })
                 }
@@ -118,7 +121,7 @@ class Users {
                 }
             })
         }).then(() => {
-            return res.status(200).send({
+            return res.status(204).send({
                 status: 'success',
                 message: 'Product removed'
             })

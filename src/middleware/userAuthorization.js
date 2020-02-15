@@ -10,14 +10,14 @@ console.log(req.headers)
          next();
         }
         else{
-            res.status(400).send({
+            res.status(401).send({
                 status: 'error',
                 message: 'invalid token'
             })
         }
   }
   else{
-      res.status(401).send({
+      res.status(403).send({
           status: 'error',
           message: 'Access denied'
       })

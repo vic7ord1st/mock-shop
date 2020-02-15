@@ -64,8 +64,8 @@ module.exports = (sequelize, DataTypes) => {
     return await bcrypt.compare(password, hash);
   }
 
-  User.prototype.generateAuthToken = async (email) => {
-    const token = await jwt.sign({ id: email }, process.env.PRIVATE_KEY, {
+  User.prototype.generateAuthToken = async (email, isAdmin) => {
+    const token = await jwt.sign({ id: email, isAdmin: isAdmin}, process.env.PRIVATE_KEY, {
       expiresIn: 86400
     });
     return token;

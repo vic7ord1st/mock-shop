@@ -9,10 +9,10 @@ const port = process.env.PORT || 2000;
 const app = express();
 
 //production logging
-if (process.env.NODE_ENV === 'production') {
-    const accessLogStream = fs.createWriteStream(path.join(__dirname, '/src/logs/access.log'), { flags: 'a' })
-    app.use(morgan('combined', { stream: accessLogStream }))
-}
+// if (process.env.NODE_ENV === 'production') {
+//     const accessLogStream = fs.createWriteStream(path.join(__dirname, '/src/logs/access.log'), { flags: 'a' })
+//     app.use(morgan('combined', { stream: accessLogStream }))
+// }
 
 // view engine setup
 app.set('views', path.join(__dirname, '/src/views'));

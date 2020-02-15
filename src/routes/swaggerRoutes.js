@@ -9,7 +9,7 @@ const options = {
     swaggerDefinition: {
         openapi: "3.0.0",
         info: {
-            title: "Documentation for the Mock-Shop",
+            title: "Documentation for the Mock-Shop, Signin or signup to get a beaerer token which can use to test the APIs",
             version: "1.0.0",
             description:
                 "A demo ecommerce store",

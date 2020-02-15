@@ -4,7 +4,7 @@
   "description": "**Mock Shop** is a simple shopping server. You are required to develop the backend API. \r You can fork this git repository and get to work!",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
