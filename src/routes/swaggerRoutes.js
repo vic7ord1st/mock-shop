@@ -4,7 +4,7 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const path = require('path');
 
-// Swagger set up
+// Swagger documentation set up
 const options = {
     swaggerDefinition: {
         openapi: "3.0.0",
@@ -12,7 +12,7 @@ const options = {
             title: "Documentation for the Mock-Shop, Signin or signup to get a beaerer token which can use to test the APIs",
             version: "1.0.0",
             description:
-                "A demo ecommerce store",
+                "A demo ecommerce store. Authentication is need to use the APIs. signing or signup to get a Bearer Token",
             license: {
                 name: "MIT",
                 url: "https://choosealicense.com/licenses/mit/"
