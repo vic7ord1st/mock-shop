@@ -8,7 +8,7 @@ You can fork this git repository and get to work!
 
 **Swagger Documentation URL** https://obscure-inlet-03292.herokuapp.com/api/v1/docs/
 
-**NOTE** The APIs are best consumed with postman. A detailed representation schema, requests and responses for the APIs can be seen in the swagger documentation
+**NOTE:** The APIs are best consumed with postman. A detailed representation schema, requests and responses for the APIs can be seen in the swagger documentation
 
 **Login Credentials**
 
