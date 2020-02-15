@@ -37,7 +37,7 @@ const options = {
         }],
         servers: [
             {
-                url: "https://obscure-inlet-03292.herokuapp.com//api/v1"
+                url: "https://obscure-inlet-03292.herokuapp.com/api/v1" //change this to your local address if running locally
             }
         ]
     },
