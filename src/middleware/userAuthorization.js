@@ -7,6 +7,7 @@ console.log(req.headers)
         const token = await jwt.verify(req.headers.authorization.split(' ')[1], process.env.PRIVATE_KEY)
         console.log(token)
         if(token){
+            res.locals.isAdmin = token.isAdmin
          next();
         }
         else{
