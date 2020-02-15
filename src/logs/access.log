@@ -1,0 +1,2 @@
+::1 - - [15/Feb/2020:17:08:19 +0000] "GET /api/v1/user/listcart/2 HTTP/1.1" 200 253 "-" "PostmanRuntime/7.22.0"
+::1 - - [15/Feb/2020:17:16:46 +0000] "GET /api/v1/user/listcart/2 HTTP/1.1" 200 253 "-" "PostmanRuntime/7.22.0"
