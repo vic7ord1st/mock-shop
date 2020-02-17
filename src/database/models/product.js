@@ -67,7 +67,7 @@ module.exports = (sequelize, DataTypes) => {
  *             format: double
  *             description: product price
  *          imageUrl: 
- *             type: string,
+ *             type: string
  *             description: product image url
  *          createdAt:
  *              type: string

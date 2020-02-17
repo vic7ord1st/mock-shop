@@ -194,7 +194,7 @@
 *      tags: [Admin]
 *      responses:
 *        "200":
-*          description:  listing of all users
+*          description:  listing of all products
 *          content:
 *            application/json:
 *              schema: {
@@ -205,11 +205,11 @@
 *                  type: string
 *                },
 *                  data: {
-*                   description: data returns data according to the user schema,
+*                   description: data returns data according to the product schema,
 *                   type: array,
 *                   items: {
 *                    type: objecct,
-*                    $ref: '#/components/schemas/User'
+*                    $ref: '#/components/schemas/Product'
 *                   }
 *                  }
 *                 }
